@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Admission Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>University Admission Form</h1>
+        <form action="">
+            <div class="divider">
+                <div class="firstname">
+                    <label for="firstname">First Name :</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                </div>
+                <div class="lastname">
+                    <label for="lastname">Last Name :</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                </div>
+            </div>
+            <div class="divider">
+                <div class="Dob">
+                    <label for="DOB">Date of Birth :</label>
+                    <input type="date" id="DOB" name="DOB" required>
+                </div>
+                <div class="phone">
+                    <label for="phone">Phone Number :</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+            </div>
+            <label for="address">Address :</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+            <div class="form-grid">
+                <div class="email">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Email...">
+                </div>
+                <div class="pincode">
+                    <label for="pincode">Pincode :</label>
+                    <input type="number" id="pincode" name="pincode" placeholder="Enter pincode...">
+                </div>
+            </div>
+            <label for="qualification">Qualification :</label>
+            <select name="qualification" id="qualification">
+                <option value="none">-Select the option-</option>
+                <option value="10th-passed">10th Passed</option>
+                <option value="12th-passed">12th Passed</option>
+                <option value="Graduate">Graduate</option>
+            </select>
+            <label for="document">Upload your Marksheet :</label>
+            <input type="file" id="document" required>
+            <label for="program">Choose your Course :</label>
+            <select name="program" id="program">
+                <option value="none">-Select the option-</option>
+                <option value="BA">BA (Bachclor of Art)</option>
+                <option value="B.Com">B.Com (Bachclor of Commerce)</option>
+                <option value="B.Sc">B.Sc (Bachclor of Science)</option>
+                <option value="MA">MA (Master of Art)</option>
+                <option value="M.Com">M.Com (Master of Commerce)</option>
+                <option value="M.Sc">M.Sc (Master of Science)</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+/* Global Setting */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.50%;
+}
+
+body {
+    font-weight: 300;
+    font-family: "Inter", sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    padding: 15px 0px;
+    background-color: #fff;
+    box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li {
+    font-size: 1.8rem;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav ul li:hover {
+    border-bottom: 2px solid #000;
+}
+
+nav i {
+    font-size: 2.5rem;
+}
+
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0px;
+    gap: 25px;
+}
+
+.hero-content h1 {
+    font-size: 5.5rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.hero-content h4 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.hero-img img {
+    border-radius: 5rem;
+
+    width: 100%;
+    height: 100%;
+
+}
+
+/* Long Card Section */
+
+.h-card {
+    display: flex;
+    margin: 2rem 0 4rem;
+    box-shadow: 0px 5px 4px rgba(221, 221, 221, 0.35);
+    align-items: center;
+    border: 1px solid #e2e2e2;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.h-card img {
+    width: 100%;
+    height: 100%;
+    flex: 50%;
+}
+
+.card-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 50%;
+}
+
+.status {
+    display: flex;
+    justify-content: space-between;
+}
+
+.read-btn {
+    all: unset;
+    font-weight: 600;
+    border-bottom: 1px border transparent;
+}
+
+.read-btn:hover {
+    border-bottom: 1px border #ccc;
+}
+
+.v-card {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 320px;
+    margin: 2rem;
+    box-shadow: 0px 5px 4px rgba(221, 221, 221, 0.25);
+    align-items: center;
+    border: 1px solid #e2e2e2;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.card-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.v-card img {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+footer li {
+    font-size: 1.8rem;
+}
+
+.banner-img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.banner-img img {
+    width: 100%;
+}
+
+.Post {
+    margin: 50px auto;
+}
+
+.Post h1 {
+    font-size: 3rem;
+}
+
+.Post hr {
+    margin: 3rem 0;
+}
+
+section h2 {
+    margin-bottom: 5px;
+}
+
+.about-author {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+article {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 2rem;
+    flex-direction: column;
+}
+
+button a {
+    text-decoration: none;
+    color: #000;
+}
+
+@media (max-width:435px) {
+    .h-card {
+        flex-direction: column;
+    }
+
+    #hero {
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    nav ul {
+        display: none;
+    }
+}
